@@ -10,6 +10,7 @@
 		F92276242A5D57D900938877 /* TestPhoneNumberValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = F92276232A5D57D900938877 /* TestPhoneNumberValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F922762C2A5D580400938877 /* PhoneValidator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922762B2A5D580400938877 /* PhoneValidator.storyboard */; };
 		F922762F2A5D583B00938877 /* PhoneValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922762E2A5D583B00938877 /* PhoneValidateViewController.swift */; };
+		F92276322A5D631300938877 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92276312A5D631300938877 /* Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		F92276232A5D57D900938877 /* TestPhoneNumberValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPhoneNumberValidator.h; sourceTree = "<group>"; };
 		F922762B2A5D580400938877 /* PhoneValidator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneValidator.storyboard; sourceTree = "<group>"; };
 		F922762E2A5D583B00938877 /* PhoneValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneValidateViewController.swift; sourceTree = "<group>"; };
+		F92276312A5D631300938877 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 		F92276162A5D57D900938877 = {
 			isa = PBXGroup;
 			children = (
+				F92276302A5D630200938877 /* Sources */,
 				F922762A2A5D57E600938877 /* Phone Validator */,
 				F92276222A5D57D900938877 /* TestPhoneNumberValidator */,
 				F92276212A5D57D900938877 /* Products */,
@@ -70,6 +73,14 @@
 				F922762E2A5D583B00938877 /* PhoneValidateViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F92276302A5D630200938877 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F92276312A5D631300938877 /* Manager.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F922762F2A5D583B00938877 /* PhoneValidateViewController.swift in Sources */,
+				F92276322A5D631300938877 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

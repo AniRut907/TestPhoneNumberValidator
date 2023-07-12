@@ -36,7 +36,7 @@ s.description  = <<-DESC
 
   spec.source_files  = "TestPhoneNumberValidator/**/*.{swift,otf,storyboard}"
   spec.resource_bundles = {
-    'Framework' => ['TestPhoneNumberValidator/**/*.{storyboard}']
+    'TestPhoneNumberValidator' => ['TestPhoneNumberValidator/**/*.{storyboard}']
   }
   s.resources = "TestPhoneNumberValidator/PhoneValidator/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 

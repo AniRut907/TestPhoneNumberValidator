@@ -44,17 +44,4 @@ open class Manager {
         }
     }
 }
-extension UIViewController {
-    var viewbundle: Bundle {
-        
-        let podBundle = Bundle(for: Self.self)
-        let bundleURL = podBundle.url(forResource: "TestPhoneNumberValidator", withExtension: "bundle")!
-        
-        if let bundle = Bundle(url: bundleURL) {
-            return bundle
-        } else {
-            return Bundle(identifier: Bundle.main.bundleIdentifier!)!
-        }
-        
-    }
-}
+

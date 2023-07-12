@@ -20,20 +20,14 @@ open class PhoneValidateViewController: UIViewController {
     }
     @IBAction func navigateOnEmailValidator(_ sender: Any) {
         let controller = Manager().navigationController
-        let storyBoard = UIStoryboard.init(name: "PhoneValidator", bundle: self.viewbundle)
-        if let vc = storyBoard.instantiateViewController(withIdentifier: "EmailValidateViewController") as? EmailValidateViewController {
-            controller.pushViewController(vc, animated: true)
-        }
-    }
-}
-extension UIViewController {
-    func getBundle() -> Bundle {
-        let podBundle = Bundle(for: Self.self)
+        let podBundle = Bundle(for: EmailValidateViewController.self)
         if let bundleURL = podBundle.url(forResource: "TestPhoneNumberValidator", withExtension: "bundle"){
             if let bundle = Bundle(url: bundleURL) {
-                return bundle
+                let storyBoard = UIStoryboard.init(name: "PhoneValidator", bundle: bundle)
+                if let vc = storyBoard.instantiateViewController(withIdentifier: "EmailValidateViewController") as? EmailValidateViewController {
+                    navigationController?.pushViewController(vc, animated: true)
+                }
             }
         }
-        return Bundle()
     }
 }

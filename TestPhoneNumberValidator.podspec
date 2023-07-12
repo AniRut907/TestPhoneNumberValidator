@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
 
   s.name         = 'TestPhoneNumberValidator'
-  s.version      = '0.0.9'
+  s.version      = '0.0.10'
   s.summary      = 'TestPhoneNumberValidator will validate email id and phone number'
 
   # This description is used to generate tags and improve search results.

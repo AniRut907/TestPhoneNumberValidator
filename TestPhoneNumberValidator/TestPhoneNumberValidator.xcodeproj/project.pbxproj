@@ -11,6 +11,7 @@
 		F922762C2A5D580400938877 /* PhoneValidator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922762B2A5D580400938877 /* PhoneValidator.storyboard */; };
 		F922762F2A5D583B00938877 /* PhoneValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922762E2A5D583B00938877 /* PhoneValidateViewController.swift */; };
 		F92276322A5D631300938877 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92276312A5D631300938877 /* Manager.swift */; };
+		F997E4CF2A5E799100BEB657 /* EmailValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F997E4CE2A5E799100BEB657 /* EmailValidateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F922762B2A5D580400938877 /* PhoneValidator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneValidator.storyboard; sourceTree = "<group>"; };
 		F922762E2A5D583B00938877 /* PhoneValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneValidateViewController.swift; sourceTree = "<group>"; };
 		F92276312A5D631300938877 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		F997E4CE2A5E799100BEB657 /* EmailValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				F922762E2A5D583B00938877 /* PhoneValidateViewController.swift */,
+				F997E4CE2A5E799100BEB657 /* EmailValidateViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F922762F2A5D583B00938877 /* PhoneValidateViewController.swift in Sources */,
+				F997E4CF2A5E799100BEB657 /* EmailValidateViewController.swift in Sources */,
 				F92276322A5D631300938877 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

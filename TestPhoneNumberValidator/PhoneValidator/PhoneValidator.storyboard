@@ -22,12 +22,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-d4-DcQ">
+                                <rect key="frame" x="106.66666666666669" y="466.66666666666669" width="180" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to email validator"/>
+                                <connections>
+                                    <action selector="navigateOnEmailValidator:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uz7-1u-mIO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zY5-pR-CYY" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Izl-AX-NHh"/>
+                            <constraint firstItem="oYd-d4-DcQ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="NDy-fA-Ppj"/>
                             <constraint firstItem="zY5-pR-CYY" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="foT-RZ-7k0"/>
+                            <constraint firstItem="oYd-d4-DcQ" firstAttribute="top" secondItem="zY5-pR-CYY" secondAttribute="bottom" constant="30" id="l92-Rd-i73"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -35,8 +45,40 @@
             </objects>
             <point key="canvasLocation" x="48" y="-2"/>
         </scene>
+        <!--Email Validate View Controller-->
+        <scene sceneID="xoO-Kb-zQb">
+            <objects>
+                <viewController restorationIdentifier="EmailValidateViewController" storyboardIdentifier="EmailValidateViewController" id="3K8-fB-0XA" customClass="EmailValidateViewController" customModule="TestPhoneNumberValidator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qzR-EE-ppQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Framework email validator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-PC-zBy">
+                                <rect key="frame" x="97" y="415.66666666666669" width="199" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pop-ud-KNC">
+                                <rect key="frame" x="76" y="253" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y4B-Yf-fMI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rXJ-PC-zBy" firstAttribute="centerX" secondItem="qzR-EE-ppQ" secondAttribute="centerX" id="Isa-S5-HBS"/>
+                            <constraint firstItem="rXJ-PC-zBy" firstAttribute="centerY" secondItem="qzR-EE-ppQ" secondAttribute="centerY" id="kV2-uR-pzR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSm-zI-vDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="-2"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="square.and.pencil.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

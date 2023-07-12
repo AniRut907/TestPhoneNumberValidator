@@ -7,9 +7,10 @@
 
 import Foundation
 import UIKit
-public class Manager {
-    
+open class Manager {
+    public var navigationController = UINavigationController()
     public init() { }
+    public let shared = Manager()
     
     public func createManager(){
         print("Manager created successfully!")
@@ -31,8 +32,15 @@ public class Manager {
         return emailTest.evaluate(with: email)
     }
     public func navigateOnPhoneValidateController(navigationController: UINavigationController){
-        let controller = UIStoryboard(name: "PhoneValidator", bundle: nil).instantiateViewController(withIdentifier: "PhoneValidateViewController")
-        navigationController.pushViewController(controller, animated: true)
+        let podBundle = Bundle(for: PhoneValidateViewController.self)
+        if let bundleURL = podBundle.url(forResource: "TestPhoneNumberValidator", withExtension: "bundle"){
+            if let bundle = Bundle(url: bundleURL) {
+                let storyBoard = UIStoryboard.init(name: "PhoneValidator", bundle: bundle)
+                if let vc = storyBoard.instantiateViewController(withIdentifier: "PhoneValidateViewController") as? PhoneValidateViewController {
+                    navigationController.pushViewController(vc, animated: true)
+                }
+            }
+        }
     }
     
 }

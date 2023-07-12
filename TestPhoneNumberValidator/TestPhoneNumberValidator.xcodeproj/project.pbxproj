@@ -36,7 +36,7 @@
 			isa = PBXGroup;
 			children = (
 				F92276302A5D630200938877 /* Sources */,
-				F922762A2A5D57E600938877 /* Phone Validator */,
+				F922762A2A5D57E600938877 /* PhoneValidator */,
 				F92276222A5D57D900938877 /* TestPhoneNumberValidator */,
 				F92276212A5D57D900938877 /* Products */,
 			);
@@ -58,13 +58,13 @@
 			path = TestPhoneNumberValidator;
 			sourceTree = "<group>";
 		};
-		F922762A2A5D57E600938877 /* Phone Validator */ = {
+		F922762A2A5D57E600938877 /* PhoneValidator */ = {
 			isa = PBXGroup;
 			children = (
 				F922762D2A5D581C00938877 /* Controllers */,
 				F922762B2A5D580400938877 /* PhoneValidator.storyboard */,
 			);
-			path = "Phone Validator";
+			path = PhoneValidator;
 			sourceTree = "<group>";
 		};
 		F922762D2A5D581C00938877 /* Controllers */ = {

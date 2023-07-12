@@ -7,9 +7,9 @@
 
 import UIKit
 
-class EmailValidateViewController: UIViewController {
+open class EmailValidateViewController: UIViewController {
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

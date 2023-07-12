@@ -10,7 +10,7 @@ import UIKit
 open class Manager {
     public var navigationController = UINavigationController()
     public init() { }
-    public let shared = Manager()
+    //public let shared = Manager()
     
     public func createManager(){
         print("Manager created successfully!")
@@ -32,6 +32,7 @@ open class Manager {
         return emailTest.evaluate(with: email)
     }
     public func navigateOnPhoneValidateController(navigationController: UINavigationController){
+        self.navigationController = navigationController
         let podBundle = Bundle(for: PhoneValidateViewController.self)
         if let bundleURL = podBundle.url(forResource: "TestPhoneNumberValidator", withExtension: "bundle"){
             if let bundle = Bundle(url: bundleURL) {
@@ -42,5 +43,18 @@ open class Manager {
             }
         }
     }
-    
+}
+extension UIViewController {
+    var viewbundle: Bundle {
+        
+        let podBundle = Bundle(for: Self.self)
+        let bundleURL = podBundle.url(forResource: "TestPhoneNumberValidator", withExtension: "bundle")!
+        
+        if let bundle = Bundle(url: bundleURL) {
+            return bundle
+        } else {
+            return Bundle(identifier: Bundle.main.bundleIdentifier!)!
+        }
+        
+    }
 }

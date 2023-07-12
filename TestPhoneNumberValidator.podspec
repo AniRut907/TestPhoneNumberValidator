@@ -34,8 +34,8 @@ s.description  = <<-DESC
 
  s.ios.deployment_target = '13.0'
 
-  spec.source_files  = "TestPhoneNumberValidator/**/*.{swift,otf,storyboard}"
-  spec.resource_bundles = {
+  s.source_files  = "TestPhoneNumberValidator/**/*.{swift,otf,storyboard}"
+  s.resource_bundles = {
     'TestPhoneNumberValidator' => ['TestPhoneNumberValidator/**/*.{storyboard}']
   }
   s.resources = "TestPhoneNumberValidator/PhoneValidator/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"

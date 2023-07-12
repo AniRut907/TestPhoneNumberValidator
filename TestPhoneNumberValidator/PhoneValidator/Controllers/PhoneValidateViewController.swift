@@ -19,7 +19,6 @@ open class PhoneValidateViewController: UIViewController {
         print("Success")
     }
     @IBAction func navigateOnEmailValidator(_ sender: Any) {
-        let controller = Manager().navigationController
         let podBundle = Bundle(for: EmailValidateViewController.self)
         if let bundleURL = podBundle.url(forResource: "TestPhoneNumberValidator", withExtension: "bundle"){
             if let bundle = Bundle(url: bundleURL) {

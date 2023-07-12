@@ -34,11 +34,10 @@ s.description  = <<-DESC
 
  s.ios.deployment_target = '13.0'
 
-  s.source_files  = "TestPhoneNumberValidator/**/*.{swift,otf,storyboard}"
+  s.source_files  = "TestPhoneNumberValidator/**/*.{swift,otf,png,jpeg,jpg,storyboard,xib,xcassets}"
   s.resource_bundles = {
     'TestPhoneNumberValidator' => ['TestPhoneNumberValidator/**/*.{storyboard}']
   }
-  s.resources = "TestPhoneNumberValidator/PhoneValidator/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
   s.swift_version = '5.0'
   s.platforms = {
